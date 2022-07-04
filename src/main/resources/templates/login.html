@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymleaf/layout"
-layout:decorator="MultipleLayout">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
 <div th:replace="/fragment/header.html :: headerFragment"></div>
+<th:block layout:fragment="script">
+   <script src="/js/develop/login.js"></script>
+</th:block>
 </head>
 <body>
   <div>
@@ -15,7 +17,7 @@ layout:decorator="MultipleLayout">
               <form>
                 <div class="mb-5">
                   <label class="form-label" for="email">ID</label>
-                  <input type="email" class="form-control" id="email" placeholder="Your email address">
+                  <input type="email" class="form-control" id="user_id" placeholder="Your email address">
                 </div>
                 <div class="mb-5">
                   <div class="d-flex align-items-center justify-content-between">
@@ -23,10 +25,10 @@ layout:decorator="MultipleLayout">
                       <label class="form-label" for="password">PW</label>
                     </div>
                     <div class="mb-2">
-                      <a href="/loginPage/find" class="text-sm text-muted text-primary-hover text-underline">Forgot password?</a>
+                      <a href="/loginPage/idPwdFind" class="text-sm text-muted text-primary-hover text-underline">Forgot password?</a>
                     </div>
                   </div>
-                  <input type="password" class="form-control" id="password" placeholder="Password" autocomplete="current-password">
+                  <input type="password" class="form-control" id="user_password" placeholder="Password" autocomplete="current-password">
                 </div>
                 <div class="mb-5">
                   <div class="form-check">
@@ -37,7 +39,7 @@ layout:decorator="MultipleLayout">
                   </div>
                 </div>
                 <div>
-                  <a href="#" class="btn btn-primary w-full">
+                  <a onclick="login()" class="btn btn-primary w-full">
                     로그인
                   </a>
                 </div>

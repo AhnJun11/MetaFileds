@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+<div th:replace="/fragment/header.html :: headerFragment"></div>
+<th:block layout:fragment="script">
+   <script src="/js/develop/memberManagement.js"></script>
+</th:block>
+</head>
+<body>
+<div th:replace="/fragment/navigation.html :: navFragment"></div>
+  <footer th:replace="/fragment/footer.html :: footerFragment"></footer>
+</body>
+</html>

@@ -9,5 +9,13 @@ public class URIController {
 	public String goIndex() {
 		return "login";
 	}
+	
+	@GetMapping("/loginPage/idPwdFind")
+	public void goIdPwdFind() {
+	}
+	
+	@GetMapping("/memberManagement")
+	public void goMemberManagement() {
+	}
 
 }
