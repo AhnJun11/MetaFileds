@@ -14,8 +14,12 @@ public class URIController {
 	public void goIdPwdFind() {
 	}
 	
-	@GetMapping("/memberManagement")
+	@GetMapping("/member/memberManagement")
 	public void goMemberManagement() {
+	}
+	
+	@GetMapping("/member/memberDetail")
+	public void goMemberDetail() {
 	}
 
 }
