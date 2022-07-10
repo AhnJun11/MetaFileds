@@ -3,25 +3,34 @@
 <head>
 <div th:replace="/fragment/header.html :: headerFragment"></div>
 <th:block layout:fragment="script">
-   <script src="/js/develop/memberManagement.js"></script>
+	<script src="/js/develop/memberManagement.js"></script>
 </th:block>
 </head>
 <body>
-	<div class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
-   <div th:replace="/fragment/navigation.html :: navFragment"></div> 
+	<div
+		class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+		<div th:replace="/fragment/navigation.html :: navFragment"></div>
 		<!-- Content -->
 		<div class="flex-lg-1 h-screen overflow-y-lg-auto">
-			<div th:replace="/fragment/headerNavigation.html :: headerNavFragment"></div>
+			<div
+				th:replace="/fragment/headerNavigation.html :: headerNavFragment"></div>
 			<!-- Navbar -->
 			<header>
 				<div class="container-fluid">
 					<div class="border-bottom pt-6" id="hing">
 						<div class="row align-items-center">
 							<div class="col-sm col-12">
-								<div class="hstack gap-2">
-									<h1 class="h2 ls-tight">회원 관리</h1>
-								</div>
-								<!-- Nav -->
+								<h1 class="h2 ls-tight">
+									회원 관리 <a style="float: right;" href="#offcanvasCreate"
+										class="btn btn-sm btn-primary" data-bs-toggle="offcanvas">
+										<span class="pe-2"> <i class="bi bi-plus-square-dotted"></i>
+									</span> <span>등록</span>
+									</a>
+								</h1>
+
+								<!-- Actions -->
+
+
 								<ul class="nav nav-tabs" id="memberTab" role="tablist">
 									<li class="nav-item dropdown" role="presentation"><a
 										href="#" class="dropdown-toggle nav-link active"
@@ -43,36 +52,11 @@
 									<li class="nav-item" role="presentation">
 										<button class="nav-link" data-bs-toggle="tab" type="button">개시
 											전</button>
+
 									</li>
 								</ul>
 							</div>
-							<!-- Actions -->
-							<div class="col-sm-auto col-12 mt-4 mt-sm-0">
-								<div class="hstack gap-2 justify-content-sm-end">
-									<!-- Form -->
-									<form class="form-inline ms-auto me-4 d-none d-md-flex">
-										<div class="input-group input-group-inline shadow-none">
-											<span class="input-group-text border-0 shadow-none ps-0 pe-3">
-												<i class="bi bi-search" style="margin-left:5px;"></i>
-											</span> <input type="text" style="background-color: white;"class="form-control form-control-flush" placeholder="Search" aria-label="Search">
-										</div>
-									</form>
-									<a href="#offcanvasCreate" class="btn btn-sm btn-primary"
-										data-bs-toggle="offcanvas"> <span class="pe-2"> <i
-											class="bi bi-plus-square-dotted"></i>
-									</span> <span>등록</span>
-									</a>
-									<a href="#modalExport"
-										class="btn btn-sm btn-neutral border-base"
-										data-bs-toggle="modal"> <span class="pe-2"> <i
-											class="bi bi-people-fill"></i>
-									</span> <span>삭제</span>
-									</a> 
-								</div>
-							</div>
-							
 						</div>
-
 					</div>
 				</div>
 			</header>
@@ -286,10 +270,22 @@
 								</select> 개 표시
 							</h6>
 							<h6 class="mb-0" style="margin-top: 7px;">총 00명</h6>
+							<div style="margin-top: -50px;"
+								class="hstack gap-2 justify-content-sm-end">
+								<!-- Form -->
+								<form class="form-inline ms-auto me-4 d-none d-md-flex">
+									<div class="input-group input-group-sm input-group-inline">
+										<span class="input-group-text pe-2"> <i
+											class="bi bi-search"></i>
+										</span> <input type="email" class="form-control" placeholder="Search"
+											aria-label="Search">
+									</div>
+								</form>
+							</div>
 						</div>
 						<div class="table-responsive">
-							<table class="table table-hover table-nowrap table-sm" >
-								<thead>
+							<table class="table table-hover table-nowrap table-sm">
+								<thead class="table-light">
 									<tr>
 										<th scope="col">No</th>
 										<th scope="col">레슨사인지</th>
@@ -405,7 +401,7 @@
 			</main>
 		</div>
 
-  <footer th:replace="/fragment/footer.html :: footerFragment"></footer>
-  </div>
+		<footer th:replace="/fragment/footer.html :: footerFragment"></footer>
+	</div>
 </body>
 </html>
