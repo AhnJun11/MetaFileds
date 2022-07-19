@@ -10,15 +10,15 @@ public class URIController {
 		return "login";
 	}
 	
-	@GetMapping("/loginPage/idPwdFind")
+	@GetMapping("loginPage/idPwdFind")
 	public void goIdPwdFind() {
 	}
 	
-	@GetMapping("/member/memberManagement")
+	@GetMapping("member/memberManagement")
 	public void goMemberManagement() {
 	}
 	
-	@GetMapping("/member/memberDetail")
+	@GetMapping("member/memberDetail")
 	public void goMemberDetail() {
 	}
 

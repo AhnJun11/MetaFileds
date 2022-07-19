@@ -9,8 +9,8 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>metaFileds</groupId>
-	<artifactId>co.kr</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>metaFlieds</artifactId>
+	<version>1.0.0</version>
 	<name>metaFileds</name>
 	<description>metaFileds Project</description>
 	<properties>

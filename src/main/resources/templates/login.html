@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
-<div th:replace="/fragment/header.html :: headerFragment"></div>
+<div th:replace="fragment/header.html :: headerFragment"></div>
 <th:block layout:fragment="script">
    <script src="/js/develop/login.js"></script>
 </th:block>
@@ -50,6 +50,6 @@
       </div>
     </div>
   </div>
-  <footer th:replace="/fragment/footer.html :: footerFragment"></footer>
+  <footer th:replace="fragment/footer.html :: footerFragment"></footer>
 </body>
 </html>

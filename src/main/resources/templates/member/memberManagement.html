@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
-<div th:replace="/fragment/header.html :: headerFragment"></div>
+<div th:replace="fragment/header.html :: headerFragment"></div>
 <th:block layout:fragment="script">
 	<script src="/js/develop/memberManagement.js"></script>
 </th:block>
@@ -9,11 +9,11 @@
 <body>
 	<div
 		class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
-		<div th:replace="/fragment/navigation.html :: navFragment"></div>
+		<div th:replace="fragment/navigation.html :: navFragment"></div>
 		<!-- Content -->
 		<div class="flex-lg-1 h-screen overflow-y-lg-auto">
 			<div
-				th:replace="/fragment/headerNavigation.html :: headerNavFragment"></div>
+				th:replace="fragment/headerNavigation.html :: headerNavFragment"></div>
 			<!-- Navbar -->
 			<header>
 				<div class="container-fluid">
@@ -401,7 +401,7 @@
 			</main>
 		</div>
 
-		<footer th:replace="/fragment/footer.html :: footerFragment"></footer>
+		<footer th:replace="fragment/footer.html :: footerFragment"></footer>
 	</div>
 </body>
 </html>
