@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+<div th:replace="fragment/header.html :: headerFragment"></div>
+<th:block layout:fragment="script">
+	<script src="/js/develop/memberManagement.js"></script>
+</th:block>
+</head>
+<body>
+	<div
+		class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+		<div th:replace="fragment/navigation.html :: navFragment"></div>
+		<!-- Content -->
+		<div class="flex-lg-1 h-screen overflow-y-lg-auto">
+			<div
+				th:replace="fragment/headerNavigation.html :: headerNavFragment"></div>
+
+			<div
+				class="d-flex flex-column flex-lg-row h-lg-full bg-surface-secondary">
+
+				<!-- Content -->
+				<div class="flex-lg-1 h-screen overflow-y-lg-auto">
+
+					<!-- Navbar -->
+					<header>
+						<div class="container-fluid">
+
+							<div class="row align-items-center">
+								<div class="col-sm col-12">
+									<!-- Title -->
+									<h1 class="h2 ls-tight" style="margin-top: 15px;">
+										커리큘럼 관리 <a style="float: right;" href="#modalExport"
+											class="btn btn-sm btn-neutral border-base"
+											data-bs-toggle="modal"> <span class="pe-2"> <i
+												class="bi bi-people-fill"></i>
+										</span> <span>삭제</span>
+										</a><a style="float: right; margin-right:10px;" href="#modalExport"
+											class="btn btn-sm btn-neutral border-base"
+											data-bs-toggle="modal"> <span class="pe-2"> <i
+												class="bi bi-people-fill"></i>
+										</span> <span>등록</span>
+										</a>
+									</h1>
+
+								</div>
+							</div>
+
+						</div>
+					</header>
+					<!-- Main -->
+					<main class="py-6 bg-surface-secondary">
+						<!-- Container -->
+						<div class="container-fluid">
+							<div class="vstack gap-6">
+								<!-- Filters -->
+								<div class="d-flex flex-column flex-md-row gap-3 ">
+									<div class="d-flex gap-3">
+										<!-- Search -->
+										<div class="input-group input-group-sm input-group-inline">
+											<span class="input-group-text pe-2"> <i
+												class="bi bi-search"></i>
+											</span> <input type="text" class="form-control" placeholder="Search"
+												aria-label="Search">
+										</div>
+									</div>
+								</div>
+								<!-- Items -->
+								<div class="row g-6">
+									<div class="card">
+										<div class="card-header border-bottom">
+										</div>
+										<div class="table-responsive">
+											<table class="table table-hover table-nowrap">
+												<thead class="table-light">
+													<tr>
+														<th scope="col">No</th>
+														<th scope="col">커리큘럼 명</th>
+														<th scope="col">회차 수</th>
+														<th scope="col">기간</th>
+														<th scope="col">적용 상품</th>
+														<th scope="col">등록일</th>
+														<th scope="col">사용여부</th>
+														<th scope="col">수정</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>입문자 전용 레슨 프로그램</td>
+														<td>27</td>
+														<td>3개월</td>
+														<td>★(신)17시 이전 입문자(BP-17E)</td>
+														<td>2022-07-03(일)</td>
+														<td>
+															<div class="form-check form-switch me-n2">
+                            									<input style="width:50px; margin-left:10px;" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked="checked">
+                          									</div>
+                        								</td>
+														<td><a href="#modalExport" class="btn btn-sm btn-neutral border-base" data-bs-toggle="modal"><span>수정</span>
+															</a>
+														</td>
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>입문자 전용 레슨 프로그램</td>
+														<td>27</td>
+														<td>3개월</td>
+														<td>★(신)17시 이전 입문자(BP-17E)</td>
+														<td>2022-07-03(일)</td>
+														<td>
+															<div class="form-check form-switch me-n2">
+                            									<input style="width:50px; margin-left:10px;" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked="checked">
+                          									</div>
+                        								</td>
+														<td><a href="#modalExport" class="btn btn-sm btn-neutral border-base" data-bs-toggle="modal"><span>수정</span>
+															</a>
+														</td>
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>입문자 전용 레슨 프로그램</td>
+														<td>27</td>
+														<td>3개월</td>
+														<td>★(신)17시 이전 입문자(BP-17E)</td>
+														<td>2022-07-03(일)</td>
+														<td>
+															<div class="form-check form-switch me-n2">
+                            									<input style="width:50px; margin-left:10px;" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked="checked">
+                          									</div>
+                        								</td>
+														<td><a href="#modalExport" class="btn btn-sm btn-neutral border-base" data-bs-toggle="modal"><span>수정</span>
+															</a>
+														</td>
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>입문자 전용 레슨 프로그램</td>
+														<td>27</td>
+														<td>3개월</td>
+														<td>★(신)17시 이전 입문자(BP-17E)</td>
+														<td>2022-07-03(일)</td>
+														<td>
+															<div class="form-check form-switch me-n2">
+                            									<input style="width:50px; margin-left:10px;" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked="checked">
+                          									</div>
+                        								</td>
+														<td><a href="#modalExport" class="btn btn-sm btn-neutral border-base" data-bs-toggle="modal"><span>수정</span>
+															</a>
+														</td>
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>입문자 전용 레슨 프로그램</td>
+														<td>27</td>
+														<td>3개월</td>
+														<td>★(신)17시 이전 입문자(BP-17E)</td>
+														<td>2022-07-03(일)</td>
+														<td>
+															<div class="form-check form-switch me-n2">
+                            									<input style="width:50px; margin-left:10px;" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked="checked">
+                          									</div>
+                        								</td>
+														<td><a href="#modalExport" class="btn btn-sm btn-neutral border-base" data-bs-toggle="modal"><span>수정</span>
+															</a>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+					</main>
+				</div>
+			</div>
+
+			<footer th:replace="fragment/footer.html :: footerFragment"></footer>
+		</div>
+</body>
+</html>

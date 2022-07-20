@@ -22,4 +22,13 @@ public class URIController {
 	public void goMemberDetail() {
 	}
 
+	@GetMapping("programManagement/productManagement")
+	public void goproductDetail() {
+	}
+	
+	@GetMapping("programManagement/curriculumManagement")
+	public void gocurriculumDetail() {
+	}
+	
+
 }
