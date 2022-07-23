@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org">
-<head>
-<div th:replace="fragment/header.html :: headerFragment"></div>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+  
+<th:block th:replace="fragments/config :: configFragment"></th:block> 
 <th:block layout:fragment="script">
    <script src="/js/develop/login.js"></script>
 </th:block>
-</head>
-<body>
-  <div>
+<body id=page-top>
     <div class="px-5 py-5 p-lg-0 h-screen bg-surface-secondary d-flex flex-column justify-content-center">
       <div class="d-flex justify-content-center">
         <div class="col-12 col-md-9 col-lg-6 min-h-lg-screen d-flex flex-column justify-content-center py-lg-16 px-lg-20 position-relative">
@@ -49,7 +49,5 @@
         </div>
       </div>
     </div>
-  </div>
-  <footer th:replace="fragment/footer.html :: footerFragment"></footer>
 </body>
 </html>

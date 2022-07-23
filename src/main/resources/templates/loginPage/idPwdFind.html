@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
-<head>
-<div th:replace="fragment/header.html :: headerFragment"></div>
-<th:block layout:fragment="script">
-   <script src="/js/develop/idPwdFind.js"></script>
-</th:block>
-</head>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+  
+<th:block th:replace="fragments/config :: configFragment"></th:block> 
+
 <body>
 	<div>
 		<div
@@ -92,7 +91,8 @@
 			</div>
 		</div>
 	</div>
-  <footer th:replace="fragment/footer.html :: footerFragment"></footer>
 </body>
-
+<th:block layout:fragment="script">
+   <script src="/js/develop/idPwdFind.js"></script>
+</th:block>
 </html>

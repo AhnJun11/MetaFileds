@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class URIController {
 	@GetMapping("/")
 	public String goIndex() {
-		return "index";
+		return "login";
 	}
 	
 	@GetMapping("loginPage/idPwdFind")
