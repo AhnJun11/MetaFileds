@@ -30,5 +30,16 @@ public class URIController {
 	public void gocurriculumDetail() {
 	}
 	
+	@GetMapping("accountingManagement/accountingManagement")
+	public void goaccountingManagement() {
+	}
+	
+	@GetMapping("setting/notice")
+	public void gonoticeDetail() {
+	}
+	
+	@GetMapping("setting/history")
+	public void gohistoryDetail() {
+	}
 
 }

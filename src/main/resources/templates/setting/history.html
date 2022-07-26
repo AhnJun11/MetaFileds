@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/default_layout}">
+<!-- Content -->
+<th:block layout:fragment="content">
+					<!-- Main -->
+					<main class="py-6 bg-surface-secondary">
+						<!-- Container -->
+						<div class="container-fluid">
+							<div class="vstack gap-6">
+									<h1 class="h2 ls-tight" style="margin-top: 15px;">
+										히스토리
+									</h1>
+								<!-- Filters -->
+								<div class="d-flex flex-column flex-md-row gap-3 ">
+									<div class="d-flex gap-3">
+										<!-- Search -->
+										<div class="input-group input-group-sm input-group-inline">
+											<span class="input-group-text pe-2"> <i
+												class="bi bi-search"></i>
+											</span> <input type="text" class="form-control" placeholder="Search"
+												aria-label="Search">
+										</div>
+									</div>
+								</div>
+								<!-- Items -->
+								<div class="row g-6">
+									<div class="card">
+										<div class="card-header border-bottom">
+										</div>
+										<div class="table-responsive">
+											<table class="table table-hover table-nowrap">
+												<thead class="table-light">
+													<tr>
+														<th scope="col">No</th>
+														<th scope="col">일시</th>
+														<th scope="col">사용자</th>
+														<th scope="col">카테고리</th>
+														<th scope="col">상세내용</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>2022-07-03 13:59:59</td>
+														<td>admin</td>
+														<td>Meta</td>
+														<td>로그인</td>
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>2022-07-03 13:59:59</td>
+														<td>admin</td>
+														<td>Meta</td>
+														<td>로그인</td>
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>2022-07-03 13:59:59</td>
+														<td>admin</td>
+														<td>Meta</td>
+														<td>로그인</td>
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>2022-07-03 13:59:59</td>
+														<td>admin</td>
+														<td>Meta</td>
+														<td>로그인</td>
+													</tr>
+													<tr>
+														<td>1</td>
+														<td>2022-07-03 13:59:59</td>
+														<td>admin</td>
+														<td>Meta</td>
+														<td>로그인</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+					</main>
+</th:block>
+</html>
