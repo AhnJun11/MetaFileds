@@ -41,5 +41,9 @@ public class URIController {
 	@GetMapping("setting/history")
 	public void gohistoryDetail() {
 	}
-
+	
+	@GetMapping("loginPage/joinMembership")
+	public void gojoinMember() {
+	}
+	
 }
