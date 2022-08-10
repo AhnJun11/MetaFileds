@@ -46,4 +46,8 @@ public class URIController {
 	public void gojoinMember() {
 	}
 	
+	@GetMapping("personnelManagement/personnelManagement")
+	public void goPersonnelManagement() {
+	}
+	
 }
