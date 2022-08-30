@@ -55,23 +55,25 @@
 					id="offcanvasCreate" aria-labelledby="offcanvasCreateLabel">
 					<div
 						class="offcanvas-header border-bottom py-5 bg-surface-secondary">
-						<h5 class="offcanvas-title" id="offcanvasCreateLabel">Create
-							a new project</h5>
+						<h5 class="offcanvas-title" id="offcanvasCreateLabel">회원등록</h5>
 						<button type="button" class="btn-close text-reset text-xs"
 							data-bs-dismiss="offcanvas" aria-label="Close"></button>
 					</div>
 					<div class="offcanvas-body vstack gap-5">
 						<div>
-							<label class="form-label">Name</label> <input type="text"
-								class="form-control" placeholder="Project name"> <span
-								class="d-block mt-2 text-sm text-muted">Make it unique.</span>
+							<label class="form-label">이름</label> <input type="text"
+								class="form-control" placeholder="Project name">
 						</div>
-						<div>
-							<label class="form-label">Description</label>
-							<textarea class="form-control"
-								placeholder="Project description ..." rows="2"></textarea>
-							<span class="d-block mt-2 text-sm text-muted">Make it
-								unique.</span>
+						<div class="col-md">
+								<div>
+									<label class="form-label">휴대폰 번호</label> 
+									<select class="form-select">
+										<option>010</option>
+										<option>011</option>
+										<option>012</option>
+									</select>
+									<input type="text" class="form-control" placeholder="Project name">
+								</div>
 						</div>
 						<hr class="my-0" />
 						<div>
@@ -135,8 +137,8 @@
 						<div class="row gx-4">
 							<div class="col-md">
 								<div>
-									<label class="form-label">Client</label> <select
-										class="form-select">
+									<label class="form-label">Client</label> 
+									<select class="form-select">
 										<option>Webpixels</option>
 										<option>Apple</option>
 										<option>Elrond</option>
@@ -175,6 +177,15 @@
 									</div>
 								</div>
 							</div>
+							
+							<div>
+							<label class="form-label">메모사항</label>
+							<textarea class="form-control"
+								placeholder="Project description ..." rows="2"></textarea>
+						</div>
+						
+						
+						
 						</div>
 					</div>
 					<div class="modal-footer py-2 bg-surface-secondary">
