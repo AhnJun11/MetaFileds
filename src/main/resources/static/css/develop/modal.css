@@ -1,4 +1,29 @@
 @charset "UTF-8";
+.form-label{
+	width:100%;
+}
 .form-control{
-	width:50%;
+	width:30%;
+}
+.form-select{
+	float:left;
+	width:auto;
+	margin-right:10px;
+}
+#phNum1 , #phNum2 , #em1{
+	float:left;
+	width:25%;
+	margin-right:10px;
+}
+#phSelect{
+	margin-top:5px;
+}
+#em2{
+	float:left;
+	width:auto;
+}
+#emIcon{
+	float:left;
+	margin-top:10px;
+	margin-right:10px;
 }

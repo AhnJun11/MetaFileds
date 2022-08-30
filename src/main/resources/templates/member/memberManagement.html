@@ -61,19 +61,49 @@
 					</div>
 					<div class="offcanvas-body vstack gap-5">
 						<div>
-							<label class="form-label">이름</label> <input type="text"
-								class="form-control" placeholder="Project name">
+							<label class="form-label">이름</label> 
+							<input type="text"class="form-control">
 						</div>
 						<div class="col-md">
 								<div>
-									<label class="form-label">휴대폰 번호</label> 
+									<label style="float:left;" class="form-label">휴대폰 번호</label> 
 									<select class="form-select">
 										<option>010</option>
 										<option>011</option>
 										<option>012</option>
 									</select>
-									<input type="text" class="form-control" placeholder="Project name">
+									<input type="text" id="phNum1" class="form-control">
+									<input type="text" id="phNum2" class="form-control">
+									<button type="button" id="phSelect" class="btn btn-sm btn-primary">조회</button>
 								</div>
+						</div>
+						<div>
+							<label class="form-label">성별</label> 
+							<div class="vstack gap-4">
+								<div class="d-flex gap-3">
+									<input class="form-check-input flex-shrink-0 text-lg"
+										type="radio" name="projecy-privacy" checked>
+									<div class="pt-1 form-checked-content">
+										<h6 class="mb-1 lh-relaxed">남성</h6>
+									</div>	
+									<input class="form-check-input flex-shrink-0 text-lg"
+										type="radio" name="projecy-privacy">
+									<div class="pt-1 form-checked-content">
+										<h6 class="mb-1 lh-relaxed">여성</h6>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div>
+							<label class="form-label">이메일 주소</label> 
+							<input type="text" id="em1" class="form-control">
+							<span id="emIcon">@</span>
+							<select id="em2" class="form-select">
+								<option>직접입력</option>
+								<option>naver.com</option>
+								<option>gmail.com</option>
+							</select>
 						</div>
 						<hr class="my-0" />
 						<div>
