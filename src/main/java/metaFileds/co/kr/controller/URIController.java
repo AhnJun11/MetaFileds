@@ -30,6 +30,10 @@ public class URIController {
 	public void gocurriculumDetail() {
 	}
 	
+	@GetMapping("programManagement/lessonSignManagement")
+	public void golessonSignManagement() {
+	}
+	
 	@GetMapping("accountingManagement/accountingManagement")
 	public void goaccountingManagement() {
 	}
