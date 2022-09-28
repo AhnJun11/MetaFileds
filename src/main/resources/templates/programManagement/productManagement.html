@@ -3,7 +3,11 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layouts/default_layout}">
 <!-- Content -->
+
 <th:block layout:fragment="content">
+	<th:block layout:fragment="script">
+	   <script src="/js/develop/productManagement.js"></script>
+	</th:block>
 					<!-- Main -->
 					<main class="py-6 bg-surface-secondary">
 						<!-- Container -->
@@ -134,9 +138,9 @@
 								</div>
 								<div class="offcanvas-body vstack gap-5">
 									<div class="col-md">
-										<button type="button" class="btn btn-sm btn-primary">이용권 상품 등록</button>
-										<button type="button" class="btn btn-sm btn-primary">레슨권 상품 등록</button>
-										<button type="button" class="btn btn-sm btn-primary">패키지 상품 등록</button>
+										<button type="button" onclick="ticketSelect(this.id)" id="passTicket" class="btn btn-sm btn-primary">이용권 상품 등록</button>
+										<button type="button" onclick="ticketSelect(this.id)" id="lessonTicket" class="btn btn-sm btn-primary">레슨권 상품 등록</button>
+										<button type="button" onclick="ticketSelect(this.id)" id="packageTicket" class="btn btn-sm btn-primary">패키지 상품 등록</button>
 									</div>
 									<div>
 										<label class="form-label">분류</label> 
@@ -161,7 +165,7 @@
 										</div>
 									</div>
 									<div class="col-md">
-										<label class="form-label">이용권명</label> 
+										<label class="form-label" id="ticketName">이용권명</label> 
 										<input type="text"class="form-control">
 									</div>
 									<div class="col-md">
@@ -261,7 +265,7 @@
 										</div>
 									</div>
 									<div>
-										<label class="form-label">이용권설명</label>
+										<label class="form-label" id="ticketDescription">이용권 설명</label>
 										<textarea class="form-control"
 											placeholder="Project description ..." rows="2"></textarea>
 									</div>

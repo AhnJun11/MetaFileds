@@ -39,144 +39,144 @@
       <!-- Main -->
       <main class="py-6 bg-surface-secondary">
         <!-- Offcanvas -->
-        <div class="offcanvas offcanvas-end w-full w-lg-1/3" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvasCreate" aria-labelledby="offcanvasCreateLabel">
-          <div class="offcanvas-header border-bottom py-5 bg-surface-secondary">
-            <h5 class="offcanvas-title" id="offcanvasCreateLabel">Add a new role</h5>
-            <button type="button" class="btn-close text-reset text-xs" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body vstack gap-5">
-            <!-- Inputs -->
-            <div class="row g-5">
-              <div class="col-md-12">
-                <div>
-                  <label class="form-label">Role name</label>
-                  <input type="text" class="form-control" placeholder="Role name">
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div>
-                  <label class="form-label">Description123</label>
-                  <textarea class="form-control" placeholder="Role description ..." rows="2"></textarea>
-                </div>
-              </div>
-            </div>
-            <!-- Permissions -->
-            <div>
-              <label class="form-label">Select permissions</label>
-              <div class="list-group list-group-flush gap-3">
-                <div class="list-group-item p-6 bg-surface-secondary border-0 rounded-2">
-                  <div class="d-flex">
-                    <div class="w-10">
-                      <i class="bi bi-folder-plus text-lg text-muted"></i>
-                    </div>
-                    <div class="flex-1 me-10">
-                      <a href="#" class="d-block h5">Projects</a>
-                      <p class="mt-1 text-sm text-muted">
-                        Select the permissions you want to add to all the projects in this account.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="vstack gap-3 mt-4 ms-10">
-                    <div class="d-flex align-items-center">
-                      <h6 class="text-sm font-semibold">Can view</h6>
-                      <div class="form-check form-switch ms-auto">
-                        <input class="form-check-input me-n2" type="checkbox" name="switch1" id="switchView1" checked>
-                      </div>
-                    </div>
-                    <hr class="my-0" />
-                    <div class="d-flex align-items-center">
-                      <h6 class="font-semibold">Can edit</h6>
-                      <div class="form-check form-switch ms-auto">
-                        <input class="form-check-input me-n2" type="checkbox" name="switch1" id="switchEdit1" checked>
-                      </div>
-                    </div>
-                    <hr class="my-0" />
-                    <div class="d-flex align-items-center">
-                      <h6 class="font-semibold">Can publish</h6>
-                      <div class="form-check form-switch ms-auto">
-                        <input class="form-check-input me-n2" type="checkbox" name="switch1" id="switchPublish1">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="list-group-item p-6 bg-surface-secondary border-0 rounded-2">
-                  <div class="d-flex">
-                    <div class="w-10">
-                      <i class="bi bi-folder-plus text-lg text-muted"></i>
-                    </div>
-                    <div class="flex-1 me-10">
-                      <a href="#" class="d-block h5">Users</a>
-                      <p class="mt-1 text-sm text-muted">
-                        Select the permissions you want to add to all the users in this account.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="vstack gap-3 mt-4 ms-10">
-                    <div class="d-flex align-items-center">
-                      <h6 class="text-sm font-semibold">Can view</h6>
-                      <div class="form-check form-switch ms-auto">
-                        <input class="form-check-input me-n2" type="checkbox" name="switch2" id="switchView2">
-                      </div>
-                    </div>
-                    <hr class="my-0" />
-                    <div class="d-flex align-items-center">
-                      <h6 class="font-semibold">Can edit</h6>
-                      <div class="form-check form-switch ms-auto">
-                        <input class="form-check-input me-n2" type="checkbox" name="switch2" id="switchEdit2" checked>
-                      </div>
-                    </div>
-                    <hr class="my-0" />
-                    <div class="d-flex align-items-center">
-                      <h6 class="font-semibold">Can publish</h6>
-                      <div class="form-check form-switch ms-auto">
-                        <input class="form-check-input me-n2" type="checkbox" name="switch2" id="switchPublish2">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="list-group-item p-6 bg-surface-secondary border-0 rounded-2">
-                  <div class="d-flex">
-                    <div class="w-10">
-                      <i class="bi bi-folder-plus text-lg text-muted"></i>
-                    </div>
-                    <div class="flex-1 me-10">
-                      <a href="#" class="d-block h5">Payments</a>
-                      <p class="mt-1 text-sm text-muted">
-                        Select the permissions you want to add to all the projects in this account.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="vstack gap-3 mt-4 ms-10">
-                    <div class="d-flex align-items-center">
-                      <h6 class="text-sm font-semibold">Can view</h6>
-                      <div class="form-check form-switch ms-auto">
-                        <input class="form-check-input me-n2" type="checkbox" name="switch3" id="switchView3" checked>
-                      </div>
-                    </div>
-                    <hr class="my-0" />
-                    <div class="d-flex align-items-center">
-                      <h6 class="font-semibold">Can edit</h6>
-                      <div class="form-check form-switch ms-auto">
-                        <input class="form-check-input me-n2" type="checkbox" name="switch3" id="switchEdit3" checked>
-                      </div>
-                    </div>
-                    <hr class="my-0" />
-                    <div class="d-flex align-items-center">
-                      <h6 class="font-semibold">Can publish</h6>
-                      <div class="form-check form-switch ms-auto">
-                        <input class="form-check-input me-n2" type="checkbox" name="switch3" id="switchPublish3">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer py-2 bg-surface-secondary">
-            <button type="button" class="btn btn-sm btn-neutral" data-bs-dismiss="offcanvas">Close</button>
-            <button type="button" class="btn btn-sm btn-primary">Save</button>
-          </div>
-        </div>
+				<div class="offcanvas offcanvas-end w-full w-lg-1/3"
+					data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1"
+					id="offcanvasCreate" aria-labelledby="offcanvasCreateLabel">
+					<div
+						class="offcanvas-header border-bottom py-5 bg-surface-secondary">
+						<h5 class="offcanvas-title" id="offcanvasCreateLabel">직원등록</h5>
+						<button type="button" class="btn-close text-reset text-xs"
+							data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body vstack gap-5">
+						<div class="col-md">
+							<label class="form-label">이름</label> 
+							<input type="text"class="form-control">
+						</div>
+						<div class="row gx-3">
+							<div class="col-md-4">
+										<label style="float:left;" class="form-label">휴대폰 번호</label> 
+										<select class="form-select">
+											<option>010</option>
+											<option>011</option>
+											<option>012</option>
+										</select>		
+							</div>
+							<div class="col-md-4">
+								<label style="float:left;" class="form-label">　</label> 
+								<input type="text" id="phNum1" class="form-control">
+							</div>
+							<div class="col-md-4">
+								<label style="float:left;" class="form-label">　</label> 
+								<input type="text" id="phNum2" class="form-control">
+							</div>
+						</div>
+						<div>
+							<label class="form-label">성별</label> 
+							<div class="vstack gap-4">
+								<div class="d-flex gap-3">
+									<input class="form-check-input flex-shrink-0 text-lg"
+										type="radio" name="projecy-privacy" checked>
+									<div class="pt-1 form-checked-content">
+										<h6 class="mb-1 lh-relaxed">남성</h6>
+									</div>	
+									<input class="form-check-input flex-shrink-0 text-lg"
+										type="radio" name="projecy-privacy">
+									<div class="pt-1 form-checked-content">
+										<h6 class="mb-1 lh-relaxed">여성</h6>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="row gx-4">
+								<div class="col-md-7">
+									<label class="form-label">이메일 주소</label> 
+									<input type="text" class="form-control">
+							</div>
+							<div class="col-md-1" style="margin-top:42px;"><span >@</span></div>
+							<div class="col-md-4">
+								<label class="form-label">　</label>
+								<select class="form-select">
+									<option>직접입력</option>
+									<option>naver.com</option>
+									<option>gmail.com</option>
+									<option>hanmail.com</option>
+								</select>
+							</div>
+						</div>
+						<div>
+							<label class="form-label">소개</label>
+							<textarea class="form-control"
+								placeholder="Project description ..." rows="2"></textarea>
+						</div>
+						<div>
+							<label class="form-label">인사정보</label> 
+							<input type="text"class="form-control">
+						</div>
+						<div class="row gx-4">
+							<div class="col-md-12">
+								<label class="form-label">직급</label> 
+								<select class="form-select">
+									<option>전체</option>
+								</select>
+							</div>
+						</div>
+						<div>
+							<label class="form-label">권한</label> 
+							<select class="form-select">
+								<option>전체</option>
+							</select>
+						</div>
+						<div>
+							<label class="form-label">재직구분</label> 
+							<div class="vstack gap-4">
+								<div class="d-flex gap-3">
+									<input class="form-check-input flex-shrink-0 text-lg"
+										type="radio" name="projecy-privacy-work" checked>
+									<div class="pt-1 form-checked-content">
+										<h6 class="mb-1 lh-relaxed">재직중</h6>
+									</div>	
+									<input class="form-check-input flex-shrink-0 text-lg"
+										type="radio" name="projecy-privacy-work">
+									<div class="pt-1 form-checked-content">
+										<h6 class="mb-1 lh-relaxed">퇴사</h6>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="row gx-4">
+							<div class="col-md-6">
+								<div>
+									<label class="form-label">입사일</label>
+									<div class="input-group input-group-inline datepicker">
+										<span class="input-group-text pe-2"> <i
+											class="bi bi-calendar"></i>
+										</span> <input type="text" class="form-control"
+											placeholder="Select date" data-input>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<label class="form-label">퇴사일</label>
+									<div class="input-group input-group-inline datepicker">
+										<span class="input-group-text pe-2"> <i
+											class="bi bi-calendar"></i>
+										</span> <input type="text" class="form-control"
+											placeholder="Select date" data-input>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer py-2 bg-surface-secondary">
+						<button type="button" class="btn btn-sm btn-neutral"
+							data-bs-dismiss="offcanvas">취소</button>
+						<button type="button" class="btn btn-sm btn-primary">등록하기</button>
+					</div>
+				</div>
         <!-- Modal -->
         <div class="modal fade" id="modalExport" tabindex="-1" aria-labelledby="modalExport" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
