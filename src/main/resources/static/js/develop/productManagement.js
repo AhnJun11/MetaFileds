@@ -11,4 +11,5 @@ function ticketSelect(ticketId){
 	}
 }
 $(document).ready(function(){
+
 });
