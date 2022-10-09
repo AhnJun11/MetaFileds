@@ -50,6 +50,10 @@ public class URIController {
 	public void gojoinMember() {
 	}
 	
+	@GetMapping("loginPage/joinMembershipAgreement")
+	public void gojoinMemberAgree() {
+	}
+	
 	@GetMapping("personnelManagement/personnelManagement")
 	public void goPersonnelManagement() {
 	}

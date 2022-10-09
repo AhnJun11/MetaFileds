@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+  
+<th:block th:replace="fragments/config :: configFragment"></th:block> 
+<th:block layout:fragment="script">
+   <script src="/js/develop/login.js"></script>
+</th:block>
+<body id=page-top>
+    <div class="px-5 py-5 p-lg-0 h-screen bg-surface-secondary d-flex flex-column justify-content-center">
+      <div class="d-flex justify-content-center">
+        <div class="col-12 col-md-9 col-lg-6 min-h-lg-screen d-flex flex-column justify-content-center py-lg-16 px-lg-20 position-relative">
+          <div class="row">
+            <div class="col-lg-10 col-md-9 col-xl-7 mx-auto">
+
+              <form>
+                <div class="mb-5">
+					<div class="vstack gap-4">
+						<div class="d-flex gap-3" style="margin-bottom:5px;">
+							<input class="form-check-input flex-shrink-0 text-lg"
+								type="radio" name="projecy-privacy" checked>
+							<div class="pt-1 form-checked-content">
+								<h6 class="mb-1 lh-relaxed">동의합니다.</h6>
+							</div>	
+							<input class="form-check-input flex-shrink-0 text-lg"
+								type="radio" name="projecy-privacy">
+							<div class="pt-1 form-checked-content">
+								<h6 class="mb-1 lh-relaxed">동의하지 않습니다.</h6>
+							</div>
+							
+						</div>
+					</div>
+					<textarea class="form-control"
+						placeholder="Project description ..." rows="2"></textarea>
+				</div>
+                <div class="mb-5">
+					<div class="vstack gap-4">
+						<div class="d-flex gap-3" style="margin-bottom:5px;">
+							<input class="form-check-input flex-shrink-0 text-lg"
+								type="radio" name="projecy-privacy" checked>
+							<div class="pt-1 form-checked-content">
+								<h6 class="mb-1 lh-relaxed">동의합니다.</h6>
+							</div>	
+							<input class="form-check-input flex-shrink-0 text-lg"
+								type="radio" name="projecy-privacy">
+							<div class="pt-1 form-checked-content">
+								<h6 class="mb-1 lh-relaxed">동의하지 않습니다.</h6>
+							</div>
+							
+						</div>
+					</div>
+					<textarea class="form-control"
+						placeholder="Project description ..." rows="2"></textarea>
+				</div>
+				<div class="mb-5">
+					<div class="vstack gap-4">
+						<div class="d-flex gap-3" style="margin-bottom:5px;">
+							<input class="form-check-input flex-shrink-0 text-lg"
+								type="radio" name="projecy-privacy" checked>
+							<div class="pt-1 form-checked-content">
+								<h6 class="mb-1 lh-relaxed">동의합니다.</h6>
+							</div>	
+							<input class="form-check-input flex-shrink-0 text-lg"
+								type="radio" name="projecy-privacy">
+							<div class="pt-1 form-checked-content">
+								<h6 class="mb-1 lh-relaxed">동의하지 않습니다.</h6>
+							</div>
+							
+						</div>
+					</div>
+					<textarea class="form-control"
+						placeholder="Project description ..." rows="2"></textarea>
+				</div>
+				<div class="mb-5">
+					<div class="vstack gap-4">
+						<div class="d-flex gap-3" style="margin-bottom:5px;">
+							<input class="form-check-input flex-shrink-0 text-lg"
+								type="radio" name="projecy-privacy" checked>
+							<div class="pt-1 form-checked-content">
+								<h6 class="mb-1 lh-relaxed">동의합니다.</h6>
+							</div>	
+							<input class="form-check-input flex-shrink-0 text-lg"
+								type="radio" name="projecy-privacy">
+							<div class="pt-1 form-checked-content">
+								<h6 class="mb-1 lh-relaxed">동의하지 않습니다.</h6>
+							</div>
+							
+						</div>
+					</div>
+					<textarea class="form-control"
+						placeholder="Project description ..." rows="2"></textarea>
+				</div>
+                <div style="justify-content : center; display: flex;">
+                  <a href="/" class="btn btn-primary" style="margin-right:20px;">
+                    뒤로가기
+                  </a>
+                  <a href="/loginPage/joinMembership" class="btn btn-primary">
+                    다음으로
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

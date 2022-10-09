@@ -20,11 +20,29 @@
                   <input type="email" class="form-control" id="user_id" placeholder="Your email address">
                 </div>
                 <div class="mb-5">
-                  <label class="form-label" for="email">성별</label>
-                  <input type="email" class="form-control" id="user_id" placeholder="Your email address">
-                </div>
-                <div class="mb-5">
-                  <label class="form-label" for="email">휴대폰 번호</label>
+                	<div class="row gx-3">
+							<div class="col-md-4">
+										<label style="float:left;" class="form-label">휴대폰 번호</label> 
+										<select class="form-select">
+											<option>010</option>
+											<option>011</option>
+											<option>012</option>
+										</select>		
+							</div>
+							<div class="col-md-4">
+								<label style="float:left;" class="form-label">　</label> 
+								<input type="text" id="phNum1" class="form-control">
+							</div>
+							<div class="col-md-4">
+								<label style="float:left;" class="form-label">　</label> 
+								<input type="text" id="phNum2" class="form-control">
+								
+							</div>
+							<button style="margin-top:20px;"type="button" class="btn btn-sm btn-primary">인증번호받기</button>
+					</div>
+				</div>
+				<div class="mb-5">
+                  <label class="form-label" for="email">인증번호</label>
                   <input type="email" class="form-control" id="user_id" placeholder="Your email address">
                 </div>
                 <div class="mb-5">
@@ -47,36 +65,13 @@
                   </div>
                   <input type="password" class="form-control" id="user_password" placeholder="Password" autocomplete="current-password">
                 </div>
-                <div class="mb-5">
-                  <label class="form-label" for="email">이메일 주소</label>
-                  <input type="email" class="form-control" id="user_id" placeholder="Your email address">
-                </div>
-                <div class="mb-5">
-                  <label class="form-label" for="email">생년월일</label>
-                  <input type="email" class="form-control" id="user_id" placeholder="Your email address">
-                </div>
-                <div class="mb-5">
-                  <label class="form-label" for="email">주소</label>
-                  <input type="email" class="form-control" id="user_id" placeholder="Your email address">
-                </div>
-                <div class="mb-5">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="check_example" id="check-remind-me">
-                    <label class="form-check-label" for="check-remind-me">
-                      아이디 저장
-                    </label>
-                  </div>
-                </div>
-                <div>
-                  <a onclick="login()" class="btn btn-primary w-full">
-                    로그인
+                <div style="justify-content : center; display: flex;">
+                  <a href="/loginPage/joinMembershipAgreement" class="btn btn-primary" style="margin-right:20px;">
+                    뒤로가기
                   </a>
-                  <br><br>
-                  <div class="mb-2">
-                      <a href="/loginPage/idPwdFind" class="text-sm text-muted text-primary-hover">아이디 찾기</a> | 
-                      <a href="/loginPage/idPwdFind" class="text-sm text-muted text-primary-hover">비밀번호 찾기</a> 
-                      <a href="/loginPage/joinMembership" class="text-sm text-muted text-primary-hover" style="float:right;">회원가입</a>
-                    </div>
+                  <a onclick="login()" class="btn btn-primary">
+                    가입하기
+                  </a>
                 </div>
               </form>
             </div>
